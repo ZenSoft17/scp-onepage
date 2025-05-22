@@ -200,7 +200,6 @@ const App = () => {
 			})
 		}
 
-		// Animaciones más suaves para los gradientes de fondo
 		setTimeout(() => animateBackgroundGradient('.bg-gradient-1', 0), 1000)
 		setTimeout(() => animateBackgroundGradient('.bg-gradient-2', 2), 1500)
 		setTimeout(() => animateBackgroundGradient('.bg-gradient-3', 4), 2000)
@@ -253,9 +252,7 @@ const App = () => {
 
 	return (
 		<div ref={containerRef} className='min-h-screen bg-white relative'>
-			{/* Fondo fijo para evitar scroll adicional */}
 			<div className="fixed inset-0 w-full h-full pointer-events-none overflow-hidden" style={{ zIndex: -1 }}>
-				{/* Gradiente 1 - Superior izquierda */}
 				<div 
 					className="bg-gradient-1 absolute"
 					style={{
@@ -269,7 +266,6 @@ const App = () => {
 					}}
 				/>
 				
-				{/* Gradiente 2 - Superior derecha */}
 				<div 
 					className="bg-gradient-2 absolute"
 					style={{
@@ -283,7 +279,6 @@ const App = () => {
 					}}
 				/>
 				
-				{/* Gradiente 3 - Centro izquierda */}
 				<div 
 					className="bg-gradient-3 absolute"
 					style={{
@@ -298,7 +293,6 @@ const App = () => {
 					}}
 				/>
 				
-				{/* Gradiente 4 - Inferior derecha */}
 				<div 
 					className="bg-gradient-4 absolute"
 					style={{
@@ -312,7 +306,6 @@ const App = () => {
 					}}
 				/>
 				
-				{/* Gradiente 5 - Centro */}
 				<div 
 					className="bg-gradient-5 absolute"
 					style={{
@@ -328,7 +321,6 @@ const App = () => {
 				/>
 			</div>
 
-			{/* Contenido principal */}
 			<div className="relative">
 				<First />
 				<Second />

@@ -10,7 +10,6 @@ const Footer = () => {
 	const statsRef = useRef(null)
 
 	useEffect(() => {
-		// Animación de fondo con GSAP
 		const ctx = gsap.context(() => {
 			gsap.to('.bg-blob-1', {
 				x: 50,
@@ -41,7 +40,6 @@ const Footer = () => {
 				ease: 'none'
 			})
 
-			// Animación del logo con GSAP
 			gsap.set(logoRef.current, { rotation: -10 })
 			gsap.to(logoRef.current, {
 				rotation: 10,
@@ -51,7 +49,6 @@ const Footer = () => {
 				ease: 'power2.inOut'
 			})
 
-			// Animación de brillo en las estadísticas
 			gsap.to('.stat-glow', {
 				opacity: 0.3,
 				scale: 1.1,
@@ -122,7 +119,6 @@ const Footer = () => {
 			ref={backgroundRef}
 			className='bg-gradient-to-br from-gray-900 via-black to-gray-800 py-24 relative overflow-hidden'
 		>
-			{/* Fondo animado mejorado */}
 			<div className='absolute inset-0 opacity-15'>
 				<div className='bg-blob-1 absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-red-500 via-red-600 to-pink-500 rounded-full blur-3xl'></div>
 				<div className='bg-blob-2 absolute bottom-0 right-1/4 w-80 h-80 bg-gradient-to-br from-white via-gray-200 to-red-100 rounded-full blur-3xl'></div>
@@ -130,7 +126,6 @@ const Footer = () => {
 				<div className='absolute top-1/4 right-1/3 w-40 h-40 bg-gradient-to-br from-orange-400 to-red-500 rounded-full blur-xl opacity-50'></div>
 			</div>
 
-			{/* Overlay con patrón */}
 			<div className='absolute inset-0 opacity-5'>
 				<div className='w-full h-full' style={{
 					backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 0)`,
@@ -145,7 +140,6 @@ const Footer = () => {
 					initial='hidden'
 					animate='visible'
 				>
-					{/* Logo y título */}
 					<motion.div
 						className='flex justify-center items-center gap-6 mb-12'
 						variants={itemVariants}
@@ -183,7 +177,6 @@ const Footer = () => {
 						</motion.h3>
 					</motion.div>
 
-					{/* Descripción mejorada */}
 					<motion.div
 						variants={itemVariants}
 						className='mb-12'
@@ -212,7 +205,6 @@ const Footer = () => {
 						</motion.p>
 					</motion.div>
 
-					{/* Iconos sociales mejorados */}
 					<motion.div
 						className='flex justify-center gap-8 mb-16'
 						variants={itemVariants}
@@ -245,7 +237,6 @@ const Footer = () => {
 						))}
 					</motion.div>
 
-					{/* Separador animado */}
 					<motion.div
 						className='border-t border-gradient-to-r from-transparent via-gray-600 to-transparent pt-12 mb-8'
 						variants={itemVariants}
@@ -260,7 +251,6 @@ const Footer = () => {
 						/>
 					</motion.div>
 
-					{/* Copyright mejorado */}
 					<motion.div variants={itemVariants}>
 						<motion.p
 							className='text-gray-400 text-lg mb-4'
@@ -277,7 +267,6 @@ const Footer = () => {
 						</motion.p>
 					</motion.div>
 
-					{/* Estadísticas mejoradas */}
 					<motion.div
 						ref={statsRef}
 						className='grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 pt-16 border-t border-gray-700'
