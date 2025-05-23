@@ -257,7 +257,7 @@ const Footer = () => {
 							whileInView={{ opacity: [0.5, 1, 0.5] }}
 							transition={{ duration: 3, repeat: Infinity }}
 						>
-							© 2025 SportCenter. Todos los derechos reservados.
+							© {new Date().getFullYear()} SportCenter. Todos los derechos reservados.
 						</motion.p>
 						<motion.p
 							className='text-red-400 font-bold text-2xl md:text-3xl'
@@ -273,7 +273,7 @@ const Footer = () => {
 						variants={containerVariants}
 					>
 						{[
-							{ number: '500+', label: 'Clientes Transformados', delay: 0 },
+							{ number: '1000+', label: 'Clientes Transformados', delay: 0 },
 							{ number: '10+', label: 'Años de Experiencia', delay: 0.2 },
 							{ number: '100%', label: 'Satisfacción Garantizada', delay: 0.4 }
 						].map(({ number, label, delay }, index) => (

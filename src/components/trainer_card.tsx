@@ -187,7 +187,7 @@ const TrainerCard = ({
 					>
 						<span className='flex items-center gap-2'>
 							<Trophy size={14} />
-							+10 años exp.
+							Certificado 
 						</span>
 					</motion.span>
 					<motion.span

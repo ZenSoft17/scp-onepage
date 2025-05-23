@@ -6,6 +6,7 @@ import Footer from './components/footer'
 import First from './components/first'
 import Second from './components/second'
 import Third from './components/third'
+import Fourth from './components/fourth'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -324,6 +325,7 @@ const App = () => {
 			<div className="relative">
 				<First />
 				<Second />
+				<Fourth />
 				<Third />
 				<Footer />
 			</div>

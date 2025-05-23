@@ -53,14 +53,14 @@ const Second = () => {
 
 				<div className='grid md:grid-cols-2 gap-16 mb-20'>
 					<TrainerCard
-						name='Cristian'
+						name='Cristian Lopéz'
 						description='Hola, soy Cristian y llevo más de 10 años en el fitness y vida saludable. Mi pasión es ayudar a las personas a descubrir su potencial y lograr resultados que nunca creyeron posibles. Especializado en transformaciones corporales y desarrollo de hábitos duraderos.'
 						image={crisImage}
 						delay={0.2}
 					/>
 
 					<TrainerCard
-						name='Sebastián'
+						name='Sebastián Arias'
 						description='Hola, soy Sebas y al igual que mi compañero llevo varios años en el fitness. Me especializo en crear programas personalizados que se adaptan a tu estilo de vida y objetivos únicos. Mi enfoque se basa en la constancia y el progreso sostenible.'
 						image={sebasImage}
 						delay={0.5}

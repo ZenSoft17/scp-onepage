@@ -9,6 +9,7 @@ interface ContactItemProps {
 	content: string
 	delay: number
 	gradient?: string
+	link : string
 }
 
 const ContactItem: React.FC<ContactItemProps> = ({
@@ -17,6 +18,7 @@ const ContactItem: React.FC<ContactItemProps> = ({
 	content,
 	delay,
 	gradient = 'bg-gradient-to-br from-red-500 to-red-600',
+	link
 }) => {
 	const containerRef = useRef<HTMLDivElement>(null)
 	const iconRef = useRef<HTMLDivElement>(null)
@@ -177,6 +179,7 @@ const ContactItem: React.FC<ContactItemProps> = ({
 			}}
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
+			onClick={() => window.location.href = link}
 		>
 			<div
 				ref={glowRef}
