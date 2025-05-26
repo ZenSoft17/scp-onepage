@@ -390,7 +390,7 @@ const First = () => {
 				</motion.h1>
 
 				<motion.p
-					className='hero-subtitle text-xl md:text-2xl lg:text-3xl xl:text-4xl text-gray-200 mb-20 font-light leading-relaxed max-w-6xl mx-auto flex flex-wrap justify-center gap-x-2 text-center'
+					className='hero-subtitle text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-200 mb-12 sm:mb-16 md:mb-20 font-light leading-relaxed max-w-xs sm:max-w-md md:max-w-4xl lg:max-w-6xl mx-auto px-4 sm:px-6 md:px-8 flex flex-wrap justify-center gap-x-1 sm:gap-x-2 text-center'
 					initial={{ opacity: 0, y: 100, scale: 0.9 }}
 					animate={{ opacity: 1, y: 0, scale: 1 }}
 					transition={{
