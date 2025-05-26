@@ -390,7 +390,7 @@ const First = () => {
 				</motion.h1>
 
 				<motion.p
-					className='hero-subtitle text-xl md:text-2xl lg:text-3xl xl:text-4xl text-gray-200 mb-20 font-light leading-relaxed max-w-6xl mx-auto'
+					className='hero-subtitle text-xl md:text-2xl lg:text-3xl xl:text-4xl text-gray-200 mb-20 font-light leading-relaxed max-w-6xl mx-auto flex flex-wrap justify-center gap-x-2 text-center'
 					initial={{ opacity: 0, y: 100, scale: 0.9 }}
 					animate={{ opacity: 1, y: 0, scale: 1 }}
 					transition={{
@@ -405,26 +405,24 @@ const First = () => {
 						transition={{ type: 'spring', stiffness: 400 }}
 					>
 						SportCenter
-					</motion.span>{' '}
-					de la mano del
+					</motion.span>
+					<span>de la mano del</span>
 					<motion.span
 						className='text-red-400 font-bold bg-gradient-to-r from-red-400 to-red-300 bg-clip-text text-transparent'
 						whileHover={{ scale: 1.05 }}
 						transition={{ type: 'spring', stiffness: 400 }}
 					>
-						{' '}
 						Profe Cris
-					</motion.span>{' '}
-					y
+					</motion.span>
+					<span>y</span>
 					<motion.span
 						className='text-red-400 font-bold bg-gradient-to-r from-red-400 to-red-300 bg-clip-text text-transparent'
 						whileHover={{ scale: 1.05 }}
 						transition={{ type: 'spring', stiffness: 400 }}
 					>
-						{' '}
 						Sebas
-					</motion.span>{' '}
-					te puede ayudar a transformar tu vida completamente
+					</motion.span>
+					<span>te puede ayudar a transformar tu vida completamente</span>
 				</motion.p>
 
 				<motion.button

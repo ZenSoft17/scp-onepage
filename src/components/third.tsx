@@ -190,7 +190,7 @@ const Third = () => {
 				</motion.div>
 
 				<motion.div
-					className='grid md:grid-cols-3 gap-8 mb-16'
+					className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16 px-4'
 					variants={containerVariants}
 					initial='hidden'
 					whileInView='visible'
@@ -211,7 +211,7 @@ const Third = () => {
 						<ContactItem
 							icon={MapPin}
 							title='Dirección'
-							content='a 11-101,, Cra. 8 #111, Chinchiná, Caldas'
+							content='a 11-101, Cra. 8 #111, Chinchiná, Caldas'
 							delay={0.2}
 							gradient='bg-gradient-to-br from-blue-500 to-blue-600'
 							link='https://www.google.com/maps/search/?api=1&query=Cra.+8+%2311-101%2C+Chinchin%C3%A1%2C+Caldas%2C+Colombia'
@@ -229,7 +229,6 @@ const Third = () => {
 						/>
 					</motion.div>
 				</motion.div>
-
 				<motion.div
 					className='text-center'
 					initial={{ opacity: 0, y: 40 }}
