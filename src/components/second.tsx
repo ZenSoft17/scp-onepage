@@ -54,14 +54,14 @@ const Second = () => {
 				<div className='grid md:grid-cols-2 gap-16 mb-20'>
 					<TrainerCard
 						name='Cristian Lopéz'
-						description='Hola, soy Cristian y llevo más de 10 años en el fitness y vida saludable. Mi pasión es ayudar a las personas a descubrir su potencial y lograr resultados que nunca creyeron posibles. Especializado en transformaciones corporales y desarrollo de hábitos duraderos.'
+						description='Soy Cristian López, entrenador personal certificado con 9 años de experiencia en el mundo del fitness. Mi enfoque es ayudarte a lograr resultados reales y sostenibles a través de planes 100% personalizados, entrenamientos adaptados a tu estilo de vida y un acompañamiento constante. Si buscas perder grasa, ganar masa muscular, mejorar tu salud o recuperarte de una lesión, trabajaré contigo con profesionalismo, seguridad y compromiso.'
 						image={crisImage}
 						delay={0.2}
 					/>
 
 					<TrainerCard
 						name='Sebastián Arias'
-						description='Hola, soy Sebas y al igual que mi compañero llevo varios años en el fitness. Me especializo en crear programas personalizados que se adaptan a tu estilo de vida y objetivos únicos. Mi enfoque se basa en la constancia y el progreso sostenible.'
+						description='Soy Sebastián Arias, entrenador fitness con cinco años de experiencia, enfocado en mejorar la salud y el bienestar de mis asesorados. Mi compromiso es llevarte a un mejor nivel físico, mental y deportivo mediante estrategias, métodos y sistemas adaptados a tus objetivos. Entrenar no es una moda, es un hábito y un estilo de vida que te mantendrá sano, fuerte y con mejores expectativas de vida.'
 						image={sebasImage}
 						delay={0.5}
 					/>
